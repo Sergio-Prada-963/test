@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import "./index.css"
+import SideBar from "./components/side_bar/side_bar"
+import Books from "./components/books/books"
+import News from "./components/news/news"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App flex flex-row bg-primary-color'>
+      <div>
+        <SideBar />
+      </div>
+      <div>
+        <Books />
+      </div>
+      <div>
+        <News />
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
