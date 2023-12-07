@@ -23,7 +23,7 @@ const Cards = ({ data }) => {
   return (
     <div className='bg-white card-new w-80'>
       <div>
-        <img src={img1} alt='img' className='w-80' />
+        <img src={img1} alt='img' className='img-news' />
       </div>
       <div className='data-card'>
         <h6>{data.titulo}</h6>
